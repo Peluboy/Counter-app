@@ -1,0 +1,141 @@
+.errorContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.error{
+    margin-right: 100px;
+}
+
+.error > img{
+    width: 47rem;
+}
+
+.text{
+    margin-left: 100px;
+}
+
+.text > h2{
+    font-size: 10rem;
+    line-height: 8rem;
+}
+
+.text > h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+button{
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #141517;
+    margin-top: 7%;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.text > h3{
+    font-size: 7rem;
+    line-height: 6rem;
+    margin-right: 40px;
+}
+
+
+@media all and (max-width: 980px) {
+
+    .errorContainer{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        height: 105vh;
+    }
+    
+    .error{
+        margin-right: -100px;
+    }
+    
+    .error > img{
+        width: 43rem;
+    }
+    
+    .text{
+        padding: 120px 0px 0px 0px;
+        margin-left: 20px;
+        width: 90%;
+    }
+    
+    .text > h2{
+        font-size: 10rem;
+        line-height: 8rem;
+    }
+    
+    .text > h4{
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 10px 0px;
+    }
+    
+    .text > a > button{
+        padding: 15px 25px;
+        color: #fff;
+        background-color: #141517;
+        margin-top: 7%;
+        border-radius: 7px;
+        font-weight: 500;
+        font-size: 17px;
+        cursor: pointer;
+    }
+} 
+
+@media (max-width:500px){ 
+    .errorContainer{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        height: 104vh;
+    }
+
+    .error{
+        margin-right: 0px;
+        margin-bottom: auto;
+    }
+    
+    .error > img{
+        width: 25rem;
+    }
+    
+    .text{
+        margin-left: 30px;
+        margin-top: 125px;
+        margin-bottom: 25px;
+    }
+    
+    .text > h2{
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+
+    .text > h3{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-right: 0;
+        margin-top: -40px;
+        margin-bottom: 25px;
+    }
+    
+    .text > h4{
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,100 @@
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 80px 0px 80px;
+    height: 10vh;
+}
+
+.menu{
+    width: 15%;
+}
+
+.menu > a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.menu > a:hover{
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.logo > a > img{
+    width: 70px;
+}
+
+.socialMedia{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialMedia > a > img{
+    margin-left: 10px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.socialMedia > a > img:hover, 
+.socialMedia > a > img:focus, 
+.socialMedia > a > img:active {
+    transform: scale(1.1);
+}
+
+@media all and (max-width: 980px) {
+
+
+    .menu{
+        width: 25%;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+    
+    .socialMedia{
+        width: 25%;
+    }
+}
+
+@media (max-width:500px){
+
+    .section{
+        padding: 35px 30px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 30%;
+    }
+    
+    .logo > a > img{
+        width: 65px;
+    }
+    
+    .socialMedia{
+        width: 15%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

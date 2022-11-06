@@ -1,0 +1,206 @@
+.mainContainer{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 25px;
+}
+
+.mainContainer > h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 16px;
+}
+
+.caption{
+    width: 392px;
+    border-radius: 8px;
+    padding: 23px 40px;
+}
+.caption > p{
+    font-size: 22px;
+    line-height: 27px;
+    width: 90%;
+    font-weight: 600;
+}
+
+.number{
+    width: 392px;
+    height: 97px;
+    background: #FFFFFF;
+    border: 2px solid #F0F0F1;
+    border-radius: 14px;
+    display: flex;
+    padding: 0px 20px;
+}
+
+.number > img{
+    width: 15px;
+}
+
+.input{
+    width: 240px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 2px solid #F0F0F1;
+    border-radius: 7px;
+    margin: auto;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input > h2{
+    font-weight: 500;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: center;
+    gap: 3px;
+}
+
+.add > button{
+    background-color: #e2f8e3;
+    margin: 0px;
+    color: #0f5812;
+    padding: 2px 24px;
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subtract > button{
+    background-color: #fde7e7;
+    margin: 0px;
+    color: #8b0000;
+    padding: 2px 24px;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.negative{
+    color: #8b0000;
+    animation: pulse 500ms ease-in-out;
+}
+
+.positive{
+    color: #0f5812;
+    animation: pulse 500ms ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.2);
+    }
+}
+
+.bottom {
+    display: flex;
+    gap: 165px;
+    align-content: center;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.counter2{
+    margin: auto;
+}
+
+.counter2 > a{
+    text-decoration: none;
+    color: #616161;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+}
+
+.reset > button{
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #141517;
+    color: white;
+    display: flex;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.reset > button > img{
+    width: 15px;
+    margin: auto;
+}
+
+.counter2{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.counter2:hover{
+    cursor: pointer;
+    font-weight: 500;
+    color: #a0a0a0;
+}
+
+@media all and (max-width: 980px) {
+    .mainContainer{
+        padding: 40px 35px;
+        width: 65%;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width:500px){ 
+    .mainContainer{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .mainContainer > h3{
+        font-size: 14px;
+    }
+    .caption{
+        width: 16.5rem;
+        border-radius: 8px;
+        padding: 25px 20px;
+    }
+    .caption > p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .number{
+        width: 16.5rem;
+        border-radius: 8px;
+    }
+    .input{
+        margin: auto 10px;
+    }
+    .bottom{
+        gap: 25px;
+    }
+    .counter2{
+        font-size: 12px;
+    }
+    .footer{
+        margin-top: 10px;
+    }
+}
