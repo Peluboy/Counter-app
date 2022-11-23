@@ -19,7 +19,11 @@ const reducer = (state, action) => {
 }
 
 export const UseReducer = ({active, setActive}) => {
-    const [count, dispatch] = useReducer(reducer, initialState)
+    const [setCount, dispatch] = useReducer(reducer, initialState)
+    const changeCounterValue = (value)  => {
+      setCount(parseInt(value))
+    }
+    
     
   return (
     <div className='mainContainer'>
@@ -30,8 +34,15 @@ export const UseReducer = ({active, setActive}) => {
       </div>
         <div className='number'>
           <img src="./images/dollar.svg" alt="" />
+
+          <input type="number" placeholder='Enter value' onKeyUp={(event) => {
+          if(event.key === 'Enter')
+            changeCounterValue(event.target.value)
+        }}>
+
+        </input>
           <div className='input'>
-            <h2 className={count.firstCount > 0 ? "positive" : count.firstCount < 0 ?"negative" : null}>{count.firstCount}</h2>
+            <h2 className={setCount.firstCount > 0 ? "positive" : setCount.firstCount < 0 ?"negative" : null}>{setCount.firstCount}</h2>
           </div>
           <div className='btns'>
             <div className='add'>

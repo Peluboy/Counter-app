@@ -37,10 +37,23 @@
     border-radius: 14px;
     display: flex;
     padding: 0px 20px;
+    gap: 10px;
 }
 
 .number > img{
     width: 15px;
+}
+
+input{
+    width: 65px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 2px solid #F0F0F1;
+    border-radius: 7px;
+    margin: auto;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .input{
@@ -191,9 +204,11 @@ button:active{
         width: 16.5rem;
         border-radius: 8px;
     }
-    .input{
-        margin: auto 10px;
+
+    input{
+        width: 40px;
     }
+
     .bottom{
         gap: 25px;
     }

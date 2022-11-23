@@ -4,7 +4,12 @@ import './counter.css'
 
 export const CustomHook = ({active, setActive}) => {
 
-const [count, increment, decrement, reset] = useCounter(0, 1)
+const [count, increment, decrement, reset, setCount] = useCounter(0, 1)
+
+
+const changeCounterValue = (value)  => {
+  setCount(parseInt(value))
+}
 
   return (
     <div className='mainContainer'>
@@ -15,6 +20,13 @@ const [count, increment, decrement, reset] = useCounter(0, 1)
       </div>
       <div className='number'>
         <img src="./images/dollar.svg" alt="" />
+
+        <input type="number" placeholder='Enter value' onKeyUp={(event) => {
+          if(event.key === 'Enter')
+            changeCounterValue(event.target.value)
+        }}>
+
+        </input>
         <div className='input'>
           <h2 className={count > 0 ? "positive" : count < 0 ?"negative" : null}>{count}</h2>
         </div>
