@@ -5,6 +5,8 @@ import './counter.css'
 const initialState = {
   firstCount: 0
 }
+
+
 const reducer = (state, action) => {
     switch (action.type) {
         case "increment":

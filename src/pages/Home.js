@@ -12,6 +12,8 @@ function Home() {
 const [count, setCount] = useState(0)
 const handleError = useErrorHandler()
 
+// ======================ERROR BOUNDARY BUTTON============================
+
 const handleClick = () => {
     try {
         if (count === MAX_COUNT_ALLOWED){
@@ -23,17 +25,23 @@ const handleClick = () => {
         handleError(e)
     }
 }
-
+// ============================================================================
 
   return (
     <div className='container'>
+
+    {/* site SEO Optimizer */}
     <Helmet>
         <title>Counter App</title>
         <meta name="description" content="React counter app using Custom Hook and useReducer" />
         <link rel='canonical' href='/'/>
     </Helmet>
+    {/* ---------------------------------------------------------------- */}
 
+    {/* navbar section */}
     <Navbar />
+    {/* ---------------------------------------------------------------- */}
+
     <div className='hero'>
         <div className='left'>
             <h2>Welcome to your Therapy Session</h2>
