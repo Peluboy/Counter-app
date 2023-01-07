@@ -150,30 +150,38 @@ body{
         .left{
             width: 100%;
             position: relative;
-            padding: 40px 0px;
-            margin: 380px 0px 30px 80px;
-            
+            padding: 230px 0 0 0;
         }
         
         .left > img{
             position: absolute;
-            left: 195px;
+            left: 225px;
             width: 45px;
-            top: 300px;
+            top: 425px;
         }
         
         .left > h2{
             font-size: 2.99rem;
             line-height: 60px;
             width: 80%;
-            margin-top: 130px;
+            margin-left: 30px;
+        }
+
+        .left > button {
+            margin-left: 35px;
         }
     
         .right{
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     
         .footer{
             bottom: -300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }

@@ -178,8 +178,8 @@ button:active{
 @media all and (max-width: 980px) {
     .mainContainer{
         padding: 40px 35px;
-        width: 65%;
-        border-radius: 15px;
+        width: 315px;
+        border-radius: 10px;
     }
 }
 
